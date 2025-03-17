@@ -75,15 +75,50 @@
 // return [...new Set(arr1.concat(arr2).sort((a,b) => a - b ))]
 // }
 // console.log(mergeArrays([1,3,5,7,7,9,11,12], [1,2,3,4,5,10,12]));// [1,2,3,4,5,7,9,10,11,12]
-function countBy(x, n) {
-    let z = []
-    for(let i = x; i => n; i++){
- return z.push(x * i)
-    }
-    return z
-  }
-  console.log(countBy(1,10)); // [1,2,3,4,5,6,7,8,9,10]
+// function countBy(x, n) {
+ 
+//   }
+//   console.log(countBy(1,10)); // [1,2,3,4,5,6,7,8,9,10]
 //?1 function sumOfDifferences(arr) {
 //     return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
 // }
 // console.log(sumOfDifferences([2, 1, 10]));
+//!2025:03:15 
+//?1 function check(a, x) {
+//   return a.some((el) => {
+//   return el === x
+//   })
+// }
+// console.log(check(['t', 'e', 's', 't'], 'e'));
+// ?2function swapValues(arr) {
+//   return arr.reverse()
+  
+// }
+// console.log(swapValues([1,2]));
+//?3 function well(x){
+//  let count = x.filter(el => el == 'good').length
+//  console.log(count)
+//  return count >= 3 ?'I smell a series!'  ? count === 2 :'Publish!' :'Fail!'
+// }
+        //  console.log(well(['bad', 'bad', 'bad']), 'Fail!');
+        //  console.log(well(['good', 'bad', 'bad', 'bad', 'bad']), 'Publish!');
+        //  console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']), 'I smell a series!'  );
+      // ?4  function countBy(x, n) {
+      // let z = []
+      // for(let i = 1;i <= n;i++){
+      // z.push( x * i)
+      // }
+      // return z
+      // }
+      // console.log(countBy(1,10));
+      // ?5 function fixTheMeerkat(arr) {
+      //   return arr.reverse()
+      //  }
+      //  console.log(fixTheMeerkat(["tails", "body", "heads"]));
+      function countPositivesSumNegatives(input) {
+        let arr1 = input.reduce((a, b) => Math.abs(a + b));
+        let arr2 = input.filter((el) => el < 0).reduce((a, b) => a + b);
+        return [arr1,arr2]
+      }
+      console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]));//10,-65
+             
