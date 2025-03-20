@@ -139,8 +139,13 @@
 // }
 // console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']));
 
-function arrayPlusArray(arr1, arr2) {
-let res = arr1.concat(arr2)
-return res.reduce((acc,el) => acc + el,0)
+//?3 function arrayPlusArray(arr1, arr2) {
+// let res = arr1.concat(arr2)
+// return res.reduce((acc,el) => acc + el,0)
+// }
+// console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+function fakeBin(x){
+return x.split("").map((el) => el < 5 ? 0 : 1 ).join("")
 }
-console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+console.log(fakeBin('45385593107843568'));
+
