@@ -128,14 +128,19 @@
 // return res
 // }
 // console.log(findMultiples(5, 25));//[5, 10, 15, 20, 25]
-function removeEveryOther(arr){
-  let newarr = []
-arr.map((el,idx) => {
-if(idx % 2 === 0){
-newarr.push(el)
-}
-})
-return newarr
-}
-console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']));
+//?2 function removeEveryOther(arr){
+//   let newarr = []
+// arr.map((el,idx) => {
+// if(idx % 2 === 0){
+// newarr.push(el)
+// }
+// })
+// return newarr
+// }
+// console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']));
 
+function arrayPlusArray(arr1, arr2) {
+let res = arr1.concat(arr2)
+return res.reduce((acc,el) => acc + el,0)
+}
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
