@@ -115,10 +115,16 @@
       //   return arr.reverse()
       //  }
       //  console.log(fixTheMeerkat(["tails", "body", "heads"]));
-      function countPositivesSumNegatives(input) {
-        let arr1 = input.reduce((a, b) => Math.abs(a + b));
-        let arr2 = input.filter((el) => el < 0).reduce((a, b) => a + b);
-        return [arr1,arr2]
-      }
-      console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]));//10,-65
-             
+      // function countPositivesSumNegatives(input) {
+      //   return input && input.length ? [input.filter(el => el > 0).length,input.filter((el) => el < 0).reduce((a, b) => a + b)] : []
+      // }
+      // console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]));//10,-65
+ //!2025.03.20
+ function findMultiples(integer, limit) {
+  let res = []
+  for(let i = integer;i<= limit;i += integer){
+    res.push(i)
+  }
+return res
+}console.log(findMultiples(5, 25));//[5, 10, 15, 20, 25]
+
