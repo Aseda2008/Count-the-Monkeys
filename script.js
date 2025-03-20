@@ -120,11 +120,22 @@
       // }
       // console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]));//10,-65
  //!2025.03.20
- function findMultiples(integer, limit) {
-  let res = []
-  for(let i = integer;i<= limit;i += integer){
-    res.push(i)
-  }
-return res
-}console.log(findMultiples(5, 25));//[5, 10, 15, 20, 25]
+//?1  function findMultiples(integer, limit) {
+//   let res = []
+//   for(let i = integer;i<= limit;i += integer){
+//     res.push(i)
+//   }
+// return res
+// }
+// console.log(findMultiples(5, 25));//[5, 10, 15, 20, 25]
+function removeEveryOther(arr){
+  let newarr = []
+arr.map((el,idx) => {
+if(idx % 2 === 0){
+newarr.push(el)
+}
+})
+return newarr
+}
+console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']));
 
