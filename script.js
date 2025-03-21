@@ -144,8 +144,13 @@
 // return res.reduce((acc,el) => acc + el,0)
 // }
 // console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
-function fakeBin(x){
-return x.split("").map((el) => el < 5 ? 0 : 1 ).join("")
-}
-console.log(fakeBin('45385593107843568'));
+//?4 function fakeBin(x){
+// return x.split("").map((el) => el < 5 ? 0 : 1 ).join("")
+// }
+// console.log(fakeBin('45385593107843568'));
 
+//!2025.03.21
+function calculator(a,b,sign){
+  return sign !== "+" && sign !== "*" && sign !== "-" && sign !== "/" ? "unknown value" : typeof a !== "number" ? "unknown value": typeof b !== "number" ?"unknown value": sign === "+" ? a + b : sign === "-" ? a - b : sign === "*" ? a * b : sign === "/" ? a / b : null
+}
+console.log(calculator("8",   "0", "-", ));
