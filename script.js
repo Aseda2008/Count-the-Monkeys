@@ -150,7 +150,16 @@
 // console.log(fakeBin('45385593107843568'));
 
 //!2025.03.21
-function calculator(a,b,sign){
-  return sign !== "+" && sign !== "*" && sign !== "-" && sign !== "/" ? "unknown value" : typeof a !== "number" ? "unknown value": typeof b !== "number" ?"unknown value": sign === "+" ? a + b : sign === "-" ? a - b : sign === "*" ? a * b : sign === "/" ? a / b : null
-}
-console.log(calculator("8",   "0", "-", ));
+// ?1function calculator(a,b,sign){
+//   return sign !== "+" && sign !== "*" && sign !== "-" && sign !== "/" ? "unknown value" : typeof a !== "number" ? "unknown value": typeof b !== "number" ?"unknown value": sign === "+" ? a + b : sign === "-" ? a - b : sign === "*" ? a * b : sign === "/" ? a / b : null
+// }
+// console.log(calculator("8",   "0", "-", ));
+//?2 function stringToArray(string){
+// return string.split(" ")
+// }
+// console.log(stringToArray("Robin Singh"));
+function smash (words) {
+  return words.join(" ")
+};
+console.log(smash(["hello", "world"]));
+
