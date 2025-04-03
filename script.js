@@ -168,17 +168,18 @@
 //   if(arr[i + 1] !== arr[i] + 1){ //!2 !== 2 true 3 !== 3 true 4 !== 4 true 
 //     return arr[i + 1]
 //   }
-
+// проо
   
 //   }
 //   return null
 // }
 // console.log(firstNonConsecutive([1,2,3,4,6,7,8]));
-function addLength(str) {
-return str.split(" ").map((el) => {
-  return el + " " + el.length
-})
-  }
-  console.log(addLength("apple ban"));
+//!2025.03.23
+//?1 function addLength(str) {
+// return str.split(" ").map((el) => {
+//   return el + " " + el.length
+// })
+//   }
+  // console.log(addLength("apple ban"));
   
 
