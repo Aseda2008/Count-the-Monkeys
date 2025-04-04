@@ -165,10 +165,11 @@
 // function firstNonConsecutive (arr) {
 // if(arr.length < 2)  return null;
 // for(let i = 0;i < arr.length - 1;i++){   //!0 < 7 
-// S  if(arr[i + 1] !== arr[i] + 1){ //!2 !== 2 true 3 !== 3 true 4 !== 4 true 
+// if(arr[i + 1] !== arr[i] + 1){ //!2 !== 2 true 3 !== 3 true 4 !== 4 true 
 //     return arr[i + 1]
 //   }
 let a = []
+let s = ""
   
 //   }
 //   return null
