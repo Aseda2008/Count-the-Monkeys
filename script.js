@@ -168,8 +168,10 @@
 // if(arr[i + 1] !== arr[i] + 1){ //!2 !== 2 true 3 !== 3 true 4 !== 4 true 
 //     return arr[i + 1]
 //   }
-let a = []
-let s = ""
+// let a = []
+// let b = ""
+// let c = 1
+
   
 //   }
 //   return null
