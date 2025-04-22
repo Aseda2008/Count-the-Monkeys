@@ -199,5 +199,11 @@
   //     while (a[k] === null) k++
   //     return a[j] === a[k] ? a[j] : v
   //   })
-  
+  // function fill_gaps(timesheet) {
+  //   var thisTimesheet = timesheet.slice(0);
+  //   if(thisTimesheet.length > 1)
+  //     timesheetHelper(1, thisTimesheet[0], thisTimesheet);
+    
+  //   return thisTimesheet;
+  // }
 
