@@ -185,5 +185,19 @@
 // })
 //   }
   // console.log(addLength("apple ban"));
+  // !2025.04.22
+  //?1 function binaryToString(binary) {
+  //   return binary.replace(/[01]{8}/g, function(v){ 
+  //     return String.fromCharCode(parseInt(v, 2)); 
+  //   });
+  // }
+  //?2 const fill_gaps = timesheet =>
+  //   timesheet.map((v,i,a) => {
+  //     if (v !== null) return v
+  //     let j=i-1, k=i+1
+  //     while (a[j] === null) j--
+  //     while (a[k] === null) k++
+  //     return a[j] === a[k] ? a[j] : v
+  //   })
   
 
